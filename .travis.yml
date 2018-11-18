@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: bk1zmuwtCd4K7SXIouEGNneMtAoFbcRlfXdDq/6KFiJauhi7DRqb4G89JVZN1S0x0cLGucz4PuEMWXWIABX1ysNgNfHRqr+a/1IEAOPs8ypj2TGs2e2esLruOy5xMKcCJu3purL3irIy/CT3+3hVBMw9kqU8sb5pDKYqkowbrL8pYDIGCIYwqK9qzXKhhkdHgsfHLuCQBpeIP/eo8sOVcuNRTGlkbAeAK/zc4e9whEHQyQNzjAC2OnfAz+1/RY+sdYZiarLhv03MtRCoywHB9Tk/64jgmc72seB5xsHlrPD1cNYWUwKDik7TEeKTUZ3/myS2Bs91ck7hT1zPa5g33YlotxXIpkEYJpUyGGXZE+SNKHV3Jlbb8MJoqB9aF+pxko4e0GL1U542aA0PhcZMHM+O1Vo5JeOTlcaffz2+jUvXtLrnEn8ZRBmoF02x0P3nTn3gvxCmujRDSTCySvWksGKaoyz7Y7L/dqntF3ZBErKcqmtUL5JseidCCxL4n+ul6W2N5YHqqxXeYiq6Opsojdn+EudpuujgPqGKDIQ3CwrjrVB0cTu8ecZqWtcOVN7nw1L+3j++Si+WMYQVW5VD7iCRN8A6IWo3UTst7ZuzZbhjfQGiiYj9f71pYfEZF/PB0o8ib3W0o/7UmDsEkS7HbB1bLO9owFKZeH4tE2ubGig=
+  app: protected-inlet-46528
+  on:
+    repo: eliwemyss/react-trello-testing
